@@ -2,7 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import "./styles.css"
 
-const API = "http://localhost:5000"
+const API = "secure-vault-production-1159.up.railway.app"
 
 export default function Login({ setToken }) {
 
