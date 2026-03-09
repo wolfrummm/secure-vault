@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import "./dashboard.css"
 
-const API = import.meta.env.VITE_API_URL
+const API = "secure-vault-production-1159.up.railway.app"
 
 export default function Dashboard({ token, logout }) {
 
