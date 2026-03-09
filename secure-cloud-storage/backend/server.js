@@ -2,6 +2,8 @@ require("dotenv").config()
 const express = require("express")
 const cors = require("cors")
 
+const app = express()
+
 app.use(cors({
   origin: [
     'https://secure-vault-sepia-ten.vercel.app/',  // replace with your real Vercel URL
@@ -12,7 +14,7 @@ app.use(cors({
 
 const connectDB = require("./config/db")
 
-const app = express()
+
 
 connectDB()
 
