@@ -9,7 +9,7 @@ connectDB()
 
 app.use(cors({
   origin: [
-    'https://secure-vault-sepia-ten.vercel.app',  // ← removed trailing slash
+    'https://secure-vault-sepia-ten.vercel.app', 
     'http://localhost:5173'
   ],
   credentials: true
@@ -22,5 +22,5 @@ app.use("/api/files", require("./routes/files"))
 
 app.get("/", (req, res) => res.send("API running"))
 
-const PORT = process.env.PORT || 5000  // ← use Railway's PORT
+const PORT = process.env.PORT || 5000  
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))

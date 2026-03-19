@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import "./dashboard.css"
 
-const API = "secure-vault-production-1159.up.railway.app"
+const API = "https://secure-vault-production-1159.up.railway.app"
 
 export default function Dashboard({ token, logout }) {
 
